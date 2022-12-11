@@ -24,14 +24,7 @@
                         "description": "Test Transaction",
                         "image": "https://image.freepik.com/free-vector/logo-sample-text_355-558.jpg",
                         "handler": function (response){
-                           jQuery.ajax({
-                               type:'post',
-                               url:'payment_process.php',
-                               data:"payment_id="+response.razorpay_payment_id,
-                               success:function(result){
-                                   window.location.href="thank_you.php";
-                               }
-                           });
+                           console.log('done');
                         }
                     };
                     var rzp1 = new Razorpay(options);
