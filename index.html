@@ -13,6 +13,7 @@
         
          jQuery.ajax({
                type:'post',
+               console.log('test');
                url:'payment_process.php',
                data:"amt="+amt+"&name="+name,
                success:function(result){
